@@ -24,3 +24,28 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.title, .text {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.all-plants {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* 
+Using a flex display for these divs is a bit overkill
+Same can be achieved by leaving the block layout, applying a centered text-align to the whole body and specifying flex-wrap above
+*/
+.plant {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 200px;
+}
